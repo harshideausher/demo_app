@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="location">
+                <p>Deliver to</p>
+                <h3><i class="fas fa-map-marker-alt"></i> New York, NYC <i class="fas fa-chevron-down"></i></h3>
+            </div>
+            <div class="profile">
+                <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                <div class="profile-img">
+                    <img src="https://via.placeholder.com/200" alt="Profile">
+                </div>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for food, grocery, etc.">
+                <button class="filter-btn"><i class="fas fa-sliders-h"></i></button>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <h2>Categories</h2>
+            <div class="categories-container">
+                <div class="category-item active">
+                    <div class="category-icon">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <p>Burger</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <p>Pizza</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <p>Chicken</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <p>Dessert</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <p>Drinks</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Restaurants Section -->
+        <section class="restaurants-section">
+            <div class="section-header">
+                <h2>Popular Restaurants</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="restaurants-container">
+                <div class="restaurant-card">
+                    <div class="restaurant-img">
+                        <img src="https://via.placeholder.com/300x200/FF4B3A/FFFFFF?text=Burger+King" alt="Restaurant">
+                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <h3>Burger King</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                        <div class="delivery-info">
+                            <span class="time"><i class="fas fa-clock"></i> 25 min</span>
+                            <span class="price">$$$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-img">
+                        <img src="https://via.placeholder.com/300x200/4B7BFF/FFFFFF?text=Pizza+Hut" alt="Restaurant">
+                        <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                    </div>
+                    <div class="restaurant-info">
+                        <h3>Pizza Hut</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 1.8 km away</p>
+                        <div class="delivery-info">
+                            <span class="time"><i class="fas fa-clock"></i> 30 min</span>
+                            <span class="price">$$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Items Section -->
+        <section class="popular-items-section">
+            <div class="section-header">
+                <h2>Popular Items</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="items-container">
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="https://via.placeholder.com/300x200/FF4B3A/FFFFFF?text=Beef+Burger" alt="Food">
+                        <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="food-info">
+                        <h3>Beef Burger</h3>
+                        <p>Burger King</p>
+                        <div class="price-rating">
+                            <span class="price">$12.99</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="https://via.placeholder.com/300x200/4B7BFF/FFFFFF?text=Cheese+Pizza" alt="Food">
+                        <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="food-info">
+                        <h3>Cheese Pizza</h3>
+                        <p>Pizza Hut</p>
+                        <div class="price-rating">
+                            <span class="price">$15.99</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Bar -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Cart</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

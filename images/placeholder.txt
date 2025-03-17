@@ -1,0 +1,10 @@
+This directory contains placeholder images for the food delivery app UI.
+
+In a real application, you would replace these with actual images.
+
+For this demo, you should add the following images:
+- profile.png - User profile image
+- restaurant1.png - First restaurant image
+- restaurant2.png - Second restaurant image
+- food1.png - First food item image
+- food2.png - Second food item image 
