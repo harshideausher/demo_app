@@ -55,6 +55,31 @@
             </div>
         </section>
 
+        <!-- Coupon Section -->
+        <section class="coupon-section">
+            <div class="section-header">
+                <h2>Promo Code</h2>
+                <a href="coupons.html" class="view-coupons-btn">View All</a>
+            </div>
+            <div class="coupon-input-container">
+                <input type="text" id="coupon-input" placeholder="Enter promo code" class="coupon-input">
+                <button class="apply-coupon-btn">Apply</button>
+            </div>
+            <!-- Applied Coupon (Hidden by default) -->
+            <div class="applied-coupon hidden" id="applied-coupon">
+                <div class="applied-coupon-info">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="coupon-details">
+                        <h3 id="applied-coupon-code">WELCOME50</h3>
+                        <p id="applied-coupon-desc">50% off on your first order</p>
+                    </div>
+                </div>
+                <button class="remove-coupon-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </section>
+
         <!-- Order Summary Section -->
         <section class="order-summary-section">
             <h2>Order Summary</h2>
@@ -85,7 +110,7 @@
                     <span>Tax</span>
                     <span>$1.80</span>
                 </div>
-                <div class="extra-item promo">
+                <div class="extra-item promo" id="discount-row">
                     <span>Promo (WELCOME50)</span>
                     <span>-$9.99</span>
                 </div>
@@ -93,7 +118,7 @@
             
             <div class="order-total">
                 <span>Total</span>
-                <span>$14.77</span>
+                <span id="total-amount">$14.77</span>
             </div>
         </section>
 
@@ -132,7 +157,7 @@
         <div class="place-order-container">
             <button class="place-order-btn">
                 <span>Place Order</span>
-                <span class="order-total-btn">$14.77</span>
+                <span class="order-total-btn" id="button-total">$14.77</span>
             </button>
         </div>
 
@@ -146,9 +171,9 @@
                 <i class="fas fa-search"></i>
                 <span>Search</span>
             </a>
-            <a href="#" class="nav-item active">
-                <i class="fas fa-shopping-cart"></i>
-                <span>Cart</span>
+            <a href="coupons.html" class="nav-item">
+                <i class="fas fa-ticket-alt"></i>
+                <span>Coupons</span>
             </a>
             <a href="#" class="nav-item">
                 <i class="fas fa-user"></i>

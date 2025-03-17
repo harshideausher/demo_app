@@ -312,6 +312,64 @@
     margin-right: 10px;
 }
 
+/* Checkout Container */
+.checkout-container {
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    z-index: 100;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.promo-container {
+    display: flex;
+    align-items: center;
+    background-color: #FFF0E6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.promo-container i {
+    color: #FF6B00;
+    margin-right: 10px;
+}
+
+.promo-container span {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.view-coupons {
+    color: #FF6B00;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.checkout-btn {
+    width: 100%;
+    background-color: #FF6B00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkout-total {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 360px) {
     .restaurant-logo {

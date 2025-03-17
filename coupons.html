@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupons - Food Delivery App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/coupons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <button class="back-btn" onclick="window.location.href='index.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1>My Coupons</h1>
+            <div class="empty-space"></div>
+        </div>
+
+        <!-- Coupon Tabs -->
+        <div class="coupon-tabs">
+            <button class="tab-btn active" data-tab="available">Available</button>
+            <button class="tab-btn" data-tab="used">Used</button>
+            <button class="tab-btn" data-tab="expired">Expired</button>
+        </div>
+
+        <!-- Available Coupons Section -->
+        <div class="coupons-container" id="available-coupons">
+            <!-- Welcome Coupon -->
+            <div class="coupon-card">
+                <div class="coupon-left">
+                    <div class="coupon-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                </div>
+                <div class="coupon-middle">
+                    <h3>WELCOME50</h3>
+                    <p class="coupon-desc">50% off on your first order</p>
+                    <p class="coupon-validity">Valid until: Dec 31, 2023</p>
+                </div>
+                <div class="coupon-right">
+                    <button class="apply-btn">Apply</button>
+                </div>
+            </div>
+
+            <!-- Loyalty Coupon -->
+            <div class="coupon-card">
+                <div class="coupon-left">
+                    <div class="coupon-icon loyalty">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                </div>
+                <div class="coupon-middle">
+                    <h3>LOYAL5</h3>
+                    <p class="coupon-desc">25% off after completing 5 orders</p>
+                    <p class="coupon-validity">Valid until: Dec 31, 2023</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 60%"></div>
+                        <span class="progress-text">3/5 orders completed</span>
+                    </div>
+                </div>
+                <div class="coupon-right">
+                    <button class="apply-btn disabled">Unlock</button>
+                </div>
+            </div>
+
+            <!-- Big Order Coupon -->
+            <div class="coupon-card">
+                <div class="coupon-left">
+                    <div class="coupon-icon big-order">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                </div>
+                <div class="coupon-middle">
+                    <h3>BIG500</h3>
+                    <p class="coupon-desc">$50 off on orders above $500</p>
+                    <p class="coupon-validity">Valid until: Dec 31, 2023</p>
+                </div>
+                <div class="coupon-right">
+                    <button class="apply-btn">Apply</button>
+                </div>
+            </div>
+
+            <!-- Weekend Special -->
+            <div class="coupon-card">
+                <div class="coupon-left">
+                    <div class="coupon-icon weekend">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                </div>
+                <div class="coupon-middle">
+                    <h3>WEEKEND20</h3>
+                    <p class="coupon-desc">20% off on weekend orders</p>
+                    <p class="coupon-validity">Valid on Saturdays and Sundays</p>
+                </div>
+                <div class="coupon-right">
+                    <button class="apply-btn">Apply</button>
+                </div>
+            </div>
+
+            <!-- Free Delivery -->
+            <div class="coupon-card">
+                <div class="coupon-left">
+                    <div class="coupon-icon free-delivery">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                </div>
+                <div class="coupon-middle">
+                    <h3>FREEDEL</h3>
+                    <p class="coupon-desc">Free delivery on orders above $30</p>
+                    <p class="coupon-validity">Valid until: Dec 31, 2023</p>
+                </div>
+                <div class="coupon-right">
+                    <button class="apply-btn">Apply</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Used Coupons Section (Hidden by default) -->
+        <div class="coupons-container hidden" id="used-coupons">
+            <div class="coupon-card used">
+                <div class="coupon-left">
+                    <div class="coupon-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="coupon-middle">
+                    <h3>SUMMER25</h3>
+                    <p class="coupon-desc">25% off on summer specials</p>
+                    <p class="coupon-validity">Used on: Aug 15, 2023</p>
+                </div>
+                <div class="coupon-right">
+                    <span class="used-label">Used</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expired Coupons Section (Hidden by default) -->
+        <div class="coupons-container hidden" id="expired-coupons">
+            <div class="coupon-card expired">
+                <div class="coupon-left">
+                    <div class="coupon-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                </div>
+                <div class="coupon-middle">
+                    <h3>SPRING15</h3>
+                    <p class="coupon-desc">15% off on spring menu</p>
+                    <p class="coupon-validity">Expired on: Jun 30, 2023</p>
+                </div>
+                <div class="coupon-right">
+                    <span class="expired-label">Expired</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </a>
+            <a href="checkout.html" class="nav-item">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Cart</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/coupons.js"></script>
+</body>
+</html> 
