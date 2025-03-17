@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Food Delivery App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <button class="back-btn" onclick="window.location.href='restaurant-detail.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1>Checkout</h1>
+            <div class="empty-space"></div>
+        </div>
+
+        <!-- Delivery Address Section -->
+        <section class="address-section">
+            <div class="section-header">
+                <h2>Delivery Address</h2>
+                <a href="#" class="change-btn">Change</a>
+            </div>
+            <div class="address-card">
+                <div class="address-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="address-details">
+                    <h3>Home</h3>
+                    <p>123 Main Street, Apt 4B</p>
+                    <p>New York, NY 10001</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Method Section -->
+        <section class="payment-section">
+            <div class="section-header">
+                <h2>Payment Method</h2>
+                <a href="#" class="change-btn">Change</a>
+            </div>
+            <div class="payment-card">
+                <div class="payment-icon">
+                    <i class="fab fa-cc-visa"></i>
+                </div>
+                <div class="payment-details">
+                    <h3>Visa ending in 4242</h3>
+                    <p>Expires 12/25</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Summary Section -->
+        <section class="order-summary-section">
+            <h2>Order Summary</h2>
+            
+            <div class="order-items">
+                <div class="order-item">
+                    <div class="item-quantity">2x</div>
+                    <div class="item-name">Whopper</div>
+                    <div class="item-price">$15.98</div>
+                </div>
+                <div class="order-item">
+                    <div class="item-quantity">1x</div>
+                    <div class="item-name">French Fries</div>
+                    <div class="item-price">$3.99</div>
+                </div>
+            </div>
+            
+            <div class="order-extras">
+                <div class="extra-item">
+                    <span>Subtotal</span>
+                    <span>$19.97</span>
+                </div>
+                <div class="extra-item">
+                    <span>Delivery Fee</span>
+                    <span>$2.99</span>
+                </div>
+                <div class="extra-item">
+                    <span>Tax</span>
+                    <span>$1.80</span>
+                </div>
+                <div class="extra-item promo">
+                    <span>Promo (WELCOME50)</span>
+                    <span>-$9.99</span>
+                </div>
+            </div>
+            
+            <div class="order-total">
+                <span>Total</span>
+                <span>$14.77</span>
+            </div>
+        </section>
+
+        <!-- Delivery Time Section -->
+        <section class="delivery-time-section">
+            <h2>Delivery Time</h2>
+            <div class="time-options">
+                <div class="time-option active">
+                    <input type="radio" name="delivery-time" id="asap" checked>
+                    <label for="asap">
+                        <div class="option-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="option-details">
+                            <h3>ASAP</h3>
+                            <p>25-30 min</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="time-option">
+                    <input type="radio" name="delivery-time" id="schedule">
+                    <label for="schedule">
+                        <div class="option-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="option-details">
+                            <h3>Schedule</h3>
+                            <p>Select time</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Place Order Button -->
+        <div class="place-order-container">
+            <button class="place-order-btn">
+                <span>Place Order</span>
+                <span class="order-total-btn">$14.77</span>
+            </button>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Cart</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html> 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Detail - Food Delivery App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/restaurant-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <button class="back-btn" onclick="window.location.href='index.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1>Restaurant Detail</h1>
+            <button class="favorite-btn">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+
+        <!-- Restaurant Hero Section -->
+        <div class="restaurant-hero">
+            <img src="https://via.placeholder.com/480x250/FF4B3A/FFFFFF?text=Burger+King" alt="Restaurant Cover">
+            <div class="restaurant-info-overlay">
+                <div class="restaurant-logo">
+                    <img src="https://via.placeholder.com/80/FFFFFF/FF4B3A?text=BK" alt="Restaurant Logo">
+                </div>
+                <div class="restaurant-basic-info">
+                    <h2>Burger King</h2>
+                    <div class="restaurant-tags">
+                        <span class="tag">Burgers</span>
+                        <span class="tag">Fast Food</span>
+                        <span class="tag">American</span>
+                    </div>
+                    <div class="restaurant-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (1.2k reviews)</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>25-30 min</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>2.3 km away</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Promo Banner -->
+        <div class="promo-banner">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <h3>50% OFF</h3>
+                    <p>On your first order with code: WELCOME50</p>
+                </div>
+                <button class="promo-btn">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="menu-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active">Burgers</button>
+                <button class="tab-btn">Sides</button>
+                <button class="tab-btn">Beverages</button>
+                <button class="tab-btn">Desserts</button>
+            </div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu-items-section">
+            <h3 class="section-title">Popular Items</h3>
+            
+            <div class="menu-item">
+                <div class="menu-item-img">
+                    <img src="https://via.placeholder.com/100/FF4B3A/FFFFFF?text=Burger" alt="Whopper">
+                </div>
+                <div class="menu-item-info">
+                    <h4>Whopper</h4>
+                    <p class="menu-item-desc">Flame-grilled beef patty with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced onions on a toasted sesame seed bun.</p>
+                    <div class="menu-item-bottom">
+                        <span class="price">$7.99</span>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-img">
+                    <img src="https://via.placeholder.com/100/FF4B3A/FFFFFF?text=Cheese" alt="Cheeseburger">
+                </div>
+                <div class="menu-item-info">
+                    <h4>Cheeseburger</h4>
+                    <p class="menu-item-desc">Flame-grilled beef patty topped with a simple layer of melted American cheese, crinkle cut pickles, yellow mustard, and ketchup on a toasted sesame seed bun.</p>
+                    <div class="menu-item-bottom">
+                        <span class="price">$5.99</span>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-img">
+                    <img src="https://via.placeholder.com/100/FF4B3A/FFFFFF?text=Chicken" alt="Chicken Sandwich">
+                </div>
+                <div class="menu-item-info">
+                    <h4>Chicken Sandwich</h4>
+                    <p class="menu-item-desc">Crispy chicken fillet topped with fresh lettuce and creamy mayonnaise on a potato bun.</p>
+                    <div class="menu-item-bottom">
+                        <span class="price">$6.99</span>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-title">Sides</h3>
+
+            <div class="menu-item">
+                <div class="menu-item-img">
+                    <img src="https://via.placeholder.com/100/FF4B3A/FFFFFF?text=Fries" alt="French Fries">
+                </div>
+                <div class="menu-item-info">
+                    <h4>French Fries</h4>
+                    <p class="menu-item-desc">Golden, crispy, thick-cut French fries with just the right amount of salt.</p>
+                    <div class="menu-item-bottom">
+                        <span class="price">$3.99</span>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Button -->
+        <div class="cart-button-container">
+            <a href="checkout.html" class="view-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span>View Cart (3 items)</span>
+                <span class="cart-total">$18.97</span>
+            </a>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </a>
+            <a href="checkout.html" class="nav-item active">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Cart</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/restaurant-detail.js"></script>
+</body>
+</html> 

@@ -1,0 +1,252 @@
+/* Checkout Page Styles */
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.top-nav h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.back-btn {
+    background: #f8f9fa;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #333;
+}
+
+.empty-space {
+    width: 40px;
+}
+
+/* Section Styles */
+.address-section,
+.payment-section,
+.order-summary-section,
+.delivery-time-section {
+    padding: 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.change-btn {
+    color: #FF4B3A;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Address Card Styles */
+.address-card,
+.payment-card {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.address-icon,
+.payment-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FF4B3A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 15px;
+}
+
+.address-details h3,
+.payment-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.address-details p,
+.payment-details p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 3px;
+}
+
+/* Order Summary Styles */
+.order-summary-section h2 {
+    margin-bottom: 20px;
+}
+
+.order-items {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-quantity {
+    font-weight: 600;
+    margin-right: 15px;
+    color: #FF4B3A;
+}
+
+.item-name {
+    flex: 1;
+}
+
+.item-price {
+    font-weight: 600;
+}
+
+.order-extras {
+    padding: 15px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 15px;
+}
+
+.extra-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.extra-item.promo {
+    color: #FF4B3A;
+    font-weight: 500;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Delivery Time Styles */
+.time-options {
+    display: flex;
+    gap: 15px;
+}
+
+.time-option {
+    flex: 1;
+    position: relative;
+}
+
+.time-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.time-option label {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.time-option.active label {
+    border-color: #FF4B3A;
+    background-color: rgba(255, 75, 58, 0.05);
+}
+
+.option-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #FF4B3A;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.option-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.option-details p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Place Order Button */
+.place-order-container {
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    z-index: 100;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.place-order-btn {
+    width: 100%;
+    background-color: #FF4B3A;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 75, 58, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 360px) {
+    .time-options {
+        flex-direction: column;
+    }
+    
+    .option-icon {
+        width: 30px;
+        height: 30px;
+    }
+} 
